@@ -26,5 +26,21 @@
 - [DELETE] blog/delete/{id} | return status{}
 ### UPDATING...
 ## SETUP WEBSERVER:
+- Yêu cầu:
++ đã cài đặt composer, php >= 7.2
+- Chạy lệnh sau tại folder``` / ``` 
+```
+cp .env.example .env
+```
+- Vào file .env chỉnh sửa lại thông tin connect database, APP_DEBUG = false (Khi public)
+- Chạy tiếp các lệnh sau:
+```composer update
+php artisan migrate
+php artisan passport:install
+```
+- Nếu deploy trên server run ``` php artisan serve ```
+- Hosting: https://mydomain/public/ or config root to /public 
 
+
+C
 

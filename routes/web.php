@@ -13,9 +13,26 @@
 
 Route::get('/', ['as' => 'home', 'uses' => 'HomeController@home']);
 
-//contact
-Route::post('/findteach',['as' => 'findteach', 'uses' => 'FindTeachController@postFind']);
-
+//find master
+Route::post('/findteach_post',['as' => 'home_findteach_post', 'uses' => 'FindTeachController@postFind']);
+/**
+ * Blog
+ */
+Route::get('/blog/{id}',['as' => 'blog_item','uses' => 'BlogController@blogiteam']);
+Route::get('/blog/category/{id}',['as' => 'blog_category','uses' => 'BlogController@blogcategory']);
+/**
+ * Teach
+ */
+Route::get('/teach/{id}',['as' => 'teach_item','uses' => 'TeachController@Teachitem']);
+/**
+ * Contact
+ */
+Route::get('/contact',['as' => 'contact','uses' => 'ContactController@index']);
+Route::post('/contact_post',['as' => 'contact_post','uses' => 'ContactController@postContact']);
+/**
+ * Find find
+ */
+Route::get('/findteach',['as' => 'homefindteach','uses' => 'FindTeachController@index']);
 
 // admin
 Route::get('admin/login', ['as' => 'getLogin', 'uses' => 'AdminController\LoginController@getLogin']);
@@ -28,7 +45,7 @@ Route::get('admin/logout', ['as' => 'getLogout', 'uses' => 'AdminController\Logi
 
 // middware
 Route::group(['middleware' => 'checkAdminLogin','prefix' => 'admin','namespace' => 'AdminController'], function () {
-	Route::get('/home','HomeController@home');
+	Route::get('/home',['as' => 'admin_home','uses' => 'HomeController@home']);
 	// category
 	Route::get('/category',['as' => 'category','uses' => 'CategoryController@index']);
 	Route::post('/category',['as' => 'category_add','uses' => 'CategoryController@add']);
@@ -76,6 +93,19 @@ Route::group(['middleware' => 'checkAdminLogin','prefix' => 'admin','namespace' 
 	 */
 	Route::get('/detail',['as' => 'detail','uses' => 'DetailController@index']);
 	Route::post('/detail_edit/{id}',['as' => 'detail_edit','uses' => 'DetailController@edit']);
+
+	/**
+	 * Contact
+	 */
+	Route::get('/contact',['as' => 'contact','uses' => 'ContactController@index']);
+	Route::get('/contact_confirm/{id}',['as' => 'contact_confirm','uses' => 'ContactController@confirm']);
+	Route::get('/contact_delete/{id}',['as' => 'contact_del','uses' => 'ContactController@del']);
+	/**
+	 * Find teach
+	 */
+	Route::get('/findteach',['as' => 'findteach','uses' => 'FindTeachController@index']);
+	Route::get('/findteach_confirm/{id}',['as' => 'findteach_confirm','uses' => 'FindTeachController@confirm']);
+	Route::get('/findteach_delete/{id}',['as' => 'findteach_del','uses' => 'FindTeachController@del']);
 	/**
 	 * image upload
 	 */

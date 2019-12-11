@@ -12,11 +12,11 @@
                 <div id="owl-carousel-gt" class="owl-carousel owl-theme wow fadeInUp">
                     @foreach($teach as $tc)
                     <div class="item tea-item  wow slideInDown">
-                        <a href="#" class="imagez">
-                            <img src="{{asset('images')}}/{{$tc->teach_avatar}}" class="img-responsive img-zoom" alt="Lê Việt Hùng">
+                        <a href="{{route('teach_item',['id' => $tc->id])}}" class="imagez">
+                            <img src="{{asset('images')}}/{{$tc->teach_avatar}}" class="img-responsive img-zoom" alt="{{$tc->teach_name}}">
                         </a>
                         <div class="text">
-                            <a href="#" class="h4 hover-mo">
+                            <a href="{{route('teach_item',['id' => $tc->id])}}" class="h4 hover-mo">
 			                    {{$tc->teach_name}}		
                                            </a>
                                            <br/>

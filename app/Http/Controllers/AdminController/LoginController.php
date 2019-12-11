@@ -27,7 +27,7 @@ class LoginController extends Controller
     {
         if (Auth::check()) {
             // nếu đăng nhập thàng công thì 
-            return redirect('admin');
+            return redirect('admin/home');
         } else {
             return view('admin.register');
         }

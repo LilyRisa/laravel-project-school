@@ -22,7 +22,7 @@
 
 <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
 
-<script type="text/javascript" src="{{asset('js/web3nhat.min.js')}}"></script>
+
 <script src="{{asset('js/bootstrap-notify.js')}}"></script>
 <script type="text/javascript">
 /*<![CDATA[*/

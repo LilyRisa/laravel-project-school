@@ -19,7 +19,7 @@
             <div class="container slide-nav">
                 <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 res-scroll">
-                        <h1 style="font-size: 0px;"> {{$home->name}}                            <a href="/" title="Trung tâm Gia sư sư phạm chất lượng cao số 1 Hà Nội" class="wow fadeInDown" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInDown;">
+                        <h1 style="font-size: 0px;"> {{$home->name}}                            <a href="{{route('home')}}" title="Trung tâm Gia sư sư phạm chất lượng cao số 1 Hà Nội" class="wow fadeInDown" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInDown;">
 
                                 <img src="{{asset('images')}}/{{$home->logoSite}}" alt="Về trang chủ" class="img-responsive">
                             </a>
@@ -40,7 +40,7 @@
                                 <div class="collapse navbar-collapse" id="myNavbar">
                                     <ul class="nav navbar-nav">
                                         <li class=" ">
-                                            <a class="" href="/gioi-thieu-ve-cong-ty-nc7550.html">GIỚI THIỆU</a>
+                                            <a class="" href="{{route('home')}}">Trang chủ</a>
                                         </li>
                                         @foreach($category as $ct)
                                         <li class=" dropdown">
@@ -48,7 +48,7 @@
                                             <ul class="dropdown-menu">
                                                 @foreach($category_child as $ctc)
                                                 @if($ctc->category_id == $ct->id)
-                                                <li><a href="#">{{$ctc->name}}</a>
+                                                <li><a href="{{route('blog_category',['id' => $ctc->id])}}">{{$ctc->name}}</a>
                                                 </li>
                                                 @endif
                                                 @endforeach
@@ -56,7 +56,12 @@
                                             </ul>
                                         </li>
                                         @endforeach
-                                        
+                                        <li class=" ">
+                                            <a class="" href="{{route('homefindteach')}}">Tìm gia sư</a>
+                                        </li>
+                                        <li class=" ">
+                                            <a class="" href="{{route('contact')}}">Liên hệ</a>
+                                        </li>
                                         
                                         <li class="repons-sm">
                                             <a href="#"><i class="fa fa-key" aria-hidden="true"></i> Đăng ký </a> - <a href=""><i class="fa fa-key" aria-hidden="true"></i> Đăng nhập </a>

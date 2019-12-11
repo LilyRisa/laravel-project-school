@@ -5,10 +5,10 @@
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="../../index3.html" class="nav-link">Home</a>
+        <a href="{{route('admin_home')}}" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="{{route('contact')}}" class="nav-link">Contact</a>
       </li>
     </ul>
 
@@ -114,6 +114,11 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
           <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="logout">
+          <i class="fas fa-sign-out-alt"></i>
         </a>
       </li>
     </ul>

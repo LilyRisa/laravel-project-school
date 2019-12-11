@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\FindTeach;
+use App\detail;
 
 class FindTeachController extends Controller
 {
@@ -13,5 +14,9 @@ class FindTeachController extends Controller
     	$input['subject'] = $subject;
     	FindTeach::create($input);
     	return json_encode(['status' => 200, 'messenges' => 'Cảm ơn bạn đã liên hệ !']);
+    }
+    public function index(){
+    	$detail = detail::where('id',1)->first()->toArray();
+    	return view('home.findteach')->with(['detail' => $detail]);
     }
 }

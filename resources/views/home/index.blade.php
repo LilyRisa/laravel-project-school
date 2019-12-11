@@ -33,7 +33,7 @@
                                 
                                 <div class="owl-item active" style="width: 270px; margin-right: 30px;">
                                     <div class="item list">
-                                        <a href="#" class="imagez">
+                                        <a href="{{route('blog_item', ['id' => $bl->blog_id])}}" class="imagez">
                                         	@foreach($image as $im)
                                         	@if($bl->img_id == $im->id)
                                             <img class="img-responsive img-op" src="{{asset('/')}}{{$im->url}}" alt="Gia sư Đức Minh - Hà Nội">
@@ -41,11 +41,11 @@
                                             @endforeach
                                         </a>
                                         <div class="text">
-                                            <a href="#" class="h4">{{$bl->blog_title}}</a>
+                                            <a href="{{route('blog_item', ['id' => $bl->blog_id])}}" class="h4">{{$bl->blog_title}}</a>
                                             <div>
                                                 <p>{{$bl->blog_meta}}</p>
                                             </div>
-                                            <a href="#"><span class="hover-mo">Xem chi tiết <i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                                            <a href="{{route('blog_item', ['id' => $bl->blog_id])}}"><span class="hover-mo">Xem chi tiết <i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +140,7 @@
                                 <div class="box">
                                     <!--                                    <span class="h4">-->
                                     <!--</span>-->
-                                    <a href="#" class="h4">{{$ctc->name}}</a>
+                                    <a href="{{route('blog_category',['id' =>$ctc->id])}}" class="h4">{{$ctc->name}}</a>
                                 </div>
                             </div>
                             <div class="content">
@@ -148,7 +148,7 @@
                                 	@foreach($blogall as $bla)
                                 	@if($bla->category_child_id == $ctc->id)
                                     <li>
-                                        <a href="#">
+                                        <a href="{{route('blog_item', ['id' => $bla->blog_id])}}">
                                             <i class="fa fa-book" aria-hidden="true"></i> {{$bla->blog_title}} </a>
                                     </li>
                                     @endif
@@ -156,7 +156,7 @@
                                     
                                 </ul>
                                 <span class="view-all hover-mo">
-                                            <a href="/quy-trinh-tim-gia-su-nc8071.html">
+                                            <a href="{{route('blog_category',['id' =>$ctc->id])}}">
                                                 <i class="fa fa-angle-double-right" aria-hidden="true"></i> Xem tất cả
                                             </a>
                                         </span>
@@ -215,7 +215,7 @@
                 };
                 console.log(data);
              $.ajax({
-                url : '{{route('findteach')}}',
+                url : '{{route('home_findteach_post')}}',
                 type : 'POST',
                 data : data,  
             success : function (data){

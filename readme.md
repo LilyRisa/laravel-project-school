@@ -42,5 +42,8 @@ php artisan passport:install
 - Hosting: https://mydomain/public/ or config root to /public 
 
 
-C
+Cập nhật ngày 12/12/2019
+
+
+
 

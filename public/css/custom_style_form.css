@@ -1,0 +1,122 @@
+
+.cf-heading {
+    color: #0e76bc;
+    padding-left: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+}
+
+.cf-heading:before {
+    content: '';
+    background-image: url('../images/next.png');
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 10px;
+}
+
+input.btn-submit {
+    font-size: 18px;
+    padding: 8px 25px 6px;
+    font-family: Roboto;
+    line-height: 1;
+}
+
+input.btn-submit:hover {
+    background-color: #0077c5;
+    border-bottom: 1px solid #0077c5;
+}
+
+input[type=checkbox], input[type=radio] {
+    position: relative;
+    top: 2px;
+}
+
+.form-control, output{
+    font-size: 13px;
+}
+.abdw {
+    column-width: 214px;
+    -moz-column-width: 214px;
+    -webkit-column-width: 214px;
+    column-gap: 10px;
+    -moz-column-gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.list-class {
+    border: 1px solid #eeeeee;
+    border-bottom: 0;
+    border-right: 0;
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+}
+
+.item-class {
+    width: 50%;
+    border-bottom: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    float: left;
+    position: relative;
+    padding: 10px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.title-class {
+    color: #3370e0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.content-class table {
+    font-size: 13px;
+    width: 100%;
+}
+
+.content-class table tr td:first-child {
+    width: 30%;
+}
+
+.content-class table tr td:last-child {
+    width: 70%;
+}
+
+.content-class td {
+    border: 0;
+}
+
+tr, td {
+    border: none;
+}
+
+table {
+    border: none;
+}
+
+.newsdes table,
+.newsdes tr, td {
+    border: 1px solid #333;
+    padding: 5px;
+}
+
+.newsdes img {
+    height: initial !important;
+}
+
+.categories-menu .group-check-box{
+    width: 70%;
+    /* float: left; */
+    margin: auto;
+}
+.categories-menu .ck-box {
+
+}
+.categories-menu .ck-box label.icon-check  {
+    color: #444;
+}

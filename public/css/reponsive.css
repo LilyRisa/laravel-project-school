@@ -1,0 +1,407 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .sp-layer p, .link-banner {
+        font-size: 30px;
+    }
+
+    .sp-layer {
+        width: 130%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+/* end screen 1400 */
+
+@media only screen and (max-width: 1400px) {
+
+}
+
+/* end screen 1400 */
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+/* end screen 1280 */
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .row-1,
+    .row-3 .down .title-down{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* end screen 1024 */
+
+@media only screen and (max-width: 992px) {
+    .sp-layer {
+        width: 150%;
+    }
+
+    .logo a {
+        float: left;
+        background-image: none;
+        width: inherit;
+        height: inherit;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header-abs {
+        position: relative;
+    }
+
+    .content-realm-of-activity .caption-roa {
+        margin-bottom: 30px;
+    }
+
+    .list-count-roa li {
+        width: 25%;
+    }
+
+    .small-news {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .caption-project {
+        opacity: 1;
+    }
+
+    .show-iframe, .width-show-iframe {
+        width: 97%;
+        height: 300px;
+    }
+
+    .lecturer_detail {
+        padding: 0 10px;
+    }
+
+    .lecturer_detail .left-in {
+        display: block;
+        width: 100%;
+    }
+
+    .lecturer_detail .right-in {
+        margin-left: 0px;
+        width: 100%;
+        float: left;
+    }
+    .lecturer_detail .info_lecturer img {
+        height: inherit;
+        width: 100%;
+    }
+    .row-5 .tea-item .imagez {
+        height: 320px;
+    }
+    .row-1 .list a.imagez {
+        height: 270px;
+    }
+}
+
+/* end screen 800 */
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 780px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .sp-layer p, .link-banner {
+        font-size: 40px;
+    }
+
+    .sp-layer {
+        width: 230%;
+    }
+
+    .list-count-roa li {
+        width: 50%;
+    }
+
+    .image-about-us .border-1 {
+        padding: 20px;
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .image-about-us .border-1:after {
+        display: none;
+    }
+
+    .image-about-us img {
+        left: 0;
+    }
+
+}
+
+/* end screen 768 */
+
+@media only screen and (max-width: 766px) {
+    .holine-hd2 {
+        margin-top: 15px;
+        position: fixed;
+        left: 10px;
+        bottom: 20px;
+    }
+
+    .holine-hd2 .content-footer {
+        float: left;
+    }
+
+    .call-header a {
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .sp-title-slide {
+        font-size: 60px !important;
+    }
+
+    .sp-layer {
+        width: 280%;
+    }
+
+    .cover-contact {
+        padding: 40px 20px;
+    }
+
+    .call-header {
+        /*display: none;*/
+    }
+
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #header-2 .res-scroll a {
+        height: 90px;
+    }
+
+    .row-3 .down .title-down {
+        padding: 0 10px;
+    }
+
+    .row-5 {
+        padding: 10px;
+    }
+
+    .row-7 .list-pr ul {
+        margin-top: 10px;
+    }
+
+    .row-7 .list li {
+        margin-bottom: 10px;
+    }
+
+    .content-project-detail,
+    .header-page .form-horizontal {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* end screen 640 */
+
+@media screen and (max-width: 600px) {
+    .res-scroll {
+        /*max-width: 200px;*/
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .video-page-1 .col-xs-6 {
+        width: 100%;
+    }
+
+    .img-item-video img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .sp-title-slide {
+        font-size: 65px !important;
+    }
+
+    .sp-layer p {
+        font-size: 50px;
+    }
+
+    .sp-layer {
+        width: 350%;
+    }
+
+    /*.list-count-roa li{
+        width: 100%;
+    }*/
+    .news-big .date-news {
+        display: none;
+    }
+
+    .caption-news {
+        padding: 20px 10px;
+    }
+
+    .link-news {
+        font-size: 16px;
+    }
+
+    .fixed-box #header-2 .res-scroll,
+    .fixed-box #header-2 .res-scroll a {
+        height: 60px;
+    }
+
+    .fixed-box .menu-btn-show {
+        top: 20px;
+    }
+
+    .row-2 .list-pr .pr-title .box {
+        padding: 10px 20px;
+        min-height: 60px;
+    }
+
+    .row-5 .tea-item img {
+        height: auto;
+        max-height: 100%;
+    }
+
+    .cover-breadcrumb {
+        height: 165px !important;
+    }
+
+    .row-xkld-1 {
+        margin-top: 22px;
+    }
+
+    .row-xkld-1 .item {
+        padding-top: 0px;
+    }
+
+    .row-xkld-1 .item .img {
+        margin: 10px 0px;
+    }
+
+    #main .title h1 {
+        font-size: 24px;
+    }
+
+    #main .title {
+        padding: 25px 0px 15px 0px;
+    }
+
+    .content-detail-text,
+    .list-pr {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .row-1 .list-pr .content {
+        padding-right: 10px;
+    }
+
+    .row-3 .down .title-down .text {
+        padding: 0px;
+    }
+
+    .menu-course {
+        padding-bottom: 20px;
+    }
+
+    #main .title h3 {
+        font-size: 22px;
+    }
+
+    .row-7, .row-4 {
+        padding-bottom: 30px;
+    }
+
+    #footer {
+        padding: 25px 0px;
+    }
+
+    .row-1 .list-pr .list p {
+        margin: 5px 0px 10px 0px;
+    }
+
+    .row-xkld-1 #phantrang {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .row-xkld-1 .item .content {
+        margin: 10px 0px;
+    }
+
+    .baoanh-alo-phone {
+        width: 30px;
+        height: 30px;
+        bottom: -10px;
+        left: 9px;
+        top: inherit;
+    }
+    .content-detail-text img {
+        width: 100%;
+    }
+}
+
+/* end screen 480 */
+
+@media screen and (max-width: 360px) {
+
+    .sp-title-slide {
+        font-size: 70px !important;
+    }
+
+    .sp-layer p {
+        font-size: 60px;
+    }
+
+    .sp-layer {
+        width: 400%;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+/* end screen 320 */
+
+@media only screen and (max-height: 800px) {
+
+}
+
+@media only screen and (max-height: 560px) {
+
+}
+
+
+

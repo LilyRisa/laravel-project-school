@@ -33,38 +33,4 @@
 <script src="{{ asset('plugins/datatables/jquery.dataTables.js') }}"></script>
 <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
 
-<script>
-	window.onload = function(){
-		$('#logout').on('click',function(){
-			swal({
-	            title: 'Xác nhận logout?',
-	            text: "",
-	            type: 'warning',
-	            showCancelButton: true,
-	            confirmButtonText: 'Có',
-	            cancelButtonText: 'Không',
-	            confirmButtonClass: 'btn btn-success',
-	            cancelButtonClass: 'btn btn-danger',
-	            buttonsStyling: false
-	        }).then(function (confirmed) {
-	            if (!confirmed.dismiss)
-	                $.ajax({
-	                    url: '{{route('getLogout')}}',
-	                    method: 'GET',
-	                    success: function(resp){
-	                        swal(
-	                            'ok!',
-	                            'Your has been logout',
-	                            'success'
-	                        );
-	                            setTimeout(function(){
-	                                location.reload();
-	                            }, 1000);
-	                    }
-	                });
-	        }, function (dismiss) {
 
-	        });
-		});
-	}
-</script>

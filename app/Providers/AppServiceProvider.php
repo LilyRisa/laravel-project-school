@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(UrlGenerator $url)
     {
         Schema::defaultStringLength(191);
         if(env('REDIRECT_HTTPS')) {

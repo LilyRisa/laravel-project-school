@@ -14,8 +14,8 @@ class AddDataToUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->text('avatar');
-            $table->text('address');
+            $table->text('avatar')->nullable();
+            $table->text('address')->nullable();
         });
     }
 

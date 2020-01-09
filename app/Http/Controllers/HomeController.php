@@ -17,7 +17,7 @@ class HomeController extends Controller
     	$image = Images::all();
     	$category = category::all();
     	$category_child = category_child::all();
-    	$home = DB::table('homedetail')->where('id','=',1)->get();
+    	$home = DB::table('homedetail')->where('id','=',2)->get();
 		$home = $home[0];
     	return view('home.index')->with(['blog' => $blog, 'image' => $image, 'category' => $category, 'category_child' => $category_child, 'blogall' => $blogall, 'home' => $home]);
     }

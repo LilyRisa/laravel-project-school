@@ -10,8 +10,8 @@ class DetailController extends Controller
 {
     public function index(){
 
-    	if(detail::where('id',1)->first() != null){
-    		$detail = detail::where('id',1)->first()->toArray();
+    	if(detail::all()->first() != null){
+    		$detail = detail::all()->first()->toArray();
     		return view('admin.deltail')->with(['detail' => $detail]);
     	}else{
     		return view('admin.deltail');

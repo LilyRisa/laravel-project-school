@@ -25,6 +25,7 @@ class HomeDataDefault extends Seeder
             	'logoSite' => '5df14976c2b19_1576094070.png',
             	'mapIframe' => 'value null',
             	'linkFB' => 'https://www.facebook.com/bo.cuaban.7169',
+            	'linkTW' => 'https://www.facebook.com/bo.cuaban.7169',
             	'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ]);
     }

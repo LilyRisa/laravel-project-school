@@ -14,7 +14,7 @@
     		<div class="col-md-12">
     			<div class="card card-default">
     				<div class="card-header">
-    					<h3 class="card-title">Hom options</h3>
+    					<h3 class="card-title">Home options</h3>
     				</div>
     				<div class="card-body">
     					<div class="row">

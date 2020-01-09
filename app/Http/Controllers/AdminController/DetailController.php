@@ -9,8 +9,14 @@ use App\detail;
 class DetailController extends Controller
 {
     public function index(){
-    	$detail = detail::where('id',1)->first()->toArray();
-    	return view('admin.deltail')->with(['detail' => $detail]);
+
+    	if(detail::where('id',1)->first() != null){
+    		$detail = detail::where('id',1)->first()->toArray();
+    		return view('admin.deltail')->with(['detail' => $detail]);
+    	}else{
+    		return view('admin.deltail');
+    	}
+    	
     }
     public function edit(Request $request, $id){
     	$input = $request->all();

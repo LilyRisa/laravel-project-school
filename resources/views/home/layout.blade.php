@@ -6,7 +6,7 @@ use App\Banner;
 use App\Images;
 use App\teach;
 
-$home = DB::table('homedetail')->where('id','=',1)->get();
+$home = DB::table('homedetail')->where('id','=',2)->get();
 $home = $home[0];
 
 $category = category::all();

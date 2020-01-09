@@ -26,5 +26,6 @@ class HomeDataDefault extends Seeder
             	'mapIframe' => 'value null',
             	'linkFB' => 'https://www.facebook.com/bo.cuaban.7169',
             	'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            ]);
     }
 }

@@ -70,7 +70,7 @@ class LoginController extends Controller
 
         $user = User::create($input);
         Auth::login($user);
-        return redirect('admin');
+        return redirect('admin/home');
     }
 
     /**
